@@ -1,0 +1,66 @@
+body {
+    background-color: #222;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.step {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.step:first-child {
+    display: block;
+}
+
+button {
+    background: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.vehicle-card {
+    background: #444;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.vehicle-card img {
+    width: 100px;
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 0 10px yellow;
+}
+
+.vehicle-card.selected {
+    border: 2px solid yellow;
+    background-color: rgba(255, 255, 0, 0.2);
+}

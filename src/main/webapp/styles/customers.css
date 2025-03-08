@@ -78,3 +78,25 @@ button:hover {
     border: 1px solid #ffd700;
     outline: none;
 }
+
+
+#bookingTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+}
+
+#bookingTable th, #bookingTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+#bookingTable th {
+    background-color: #444;
+    color: #ffd700;
+}
+
+#bookingTable tr:hover {
+    background-color: #555;
+}

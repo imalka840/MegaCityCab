@@ -64,7 +64,7 @@ public class RegisterDriverCarServlet extends HttpServlet {
                 stmt.setString(10, imageLink);
 
                 stmt.executeUpdate();
-                response.sendRedirect("success.jsp");
+                response.sendRedirect("manage_drivers.jsp");
             }
 
         } catch (ClassNotFoundException | SQLException e) {

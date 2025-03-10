@@ -3,6 +3,7 @@
 <head>
     <title>Driver and Car Registration</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="stuff/mcclogo.png">
     <script>
         function updateSeats() {
             const type = document.getElementById('type').value;
@@ -14,6 +15,11 @@
     </script>
 </head>
 <body>
+
+<a href="manage_bookings.jsp" style="position: absolute; top: 10px; left: 10px;">
+    <img src="stuff/mcclogo.png" alt="MCC Logo" style="width: 120px; cursor: pointer;">
+</a>
+
     <div class="container">
         <h1>Driver and Car Registration</h1>
 

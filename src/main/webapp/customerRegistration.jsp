@@ -3,8 +3,14 @@
 <head>
     <title>Customer Registration</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="stuff/mcclogo.png">
 </head>
 <body>
+
+<a href="manage_bookings.jsp" style="position: absolute; top: 10px; left: 10px;">
+    <img src="stuff/mcclogo.png" alt="MCC Logo" style="width: 120px; cursor: pointer;">
+</a>
+
     <div class="container">
         <h1>Customer Registration</h1>
         

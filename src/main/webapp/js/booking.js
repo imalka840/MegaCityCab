@@ -16,9 +16,9 @@ function validateNIC() {
 document.getElementById("passengerCount").addEventListener("input", function() {
     let count = parseInt(this.value) || 0;
     let suggestion = "";
-    if (count <= 4) suggestion = "A car will be good for you.";
-    else if (count <= 6) suggestion = "A Mini Van will be good for you.";
-    else if (count <= 15) suggestion = "A Van will be good for you.";
+    if (count <= 4) suggestion = "A car will be good for customer!.";
+    else if (count <= 6) suggestion = "A Mini Van will be good for customer!.";
+    else if (count <= 15) suggestion = "A Van will be good for customer!.";
     else suggestion = "Maximum passenger limit exceeded. Please split into 2 bookings.";
     document.getElementById("vehicleSuggestion").innerText = suggestion;
 });
@@ -170,7 +170,7 @@ function confirmBooking() {
             if (anotherBooking) {
                 window.location.href = "booking.jsp";
             } else {
-                window.location.href = "home.html";
+                window.location.href = "manage_bookings.jsp";
             }
         }
     })

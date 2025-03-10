@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Booking</title>
     <link rel="stylesheet" href="styles/booking.css">
+    <link rel="icon" type="image/png" href="stuff/mcclogo.png">
 </head>
 <body>
+<a href="manage_bookings.jsp" style="position: absolute; top: 10px; left: 10px;">
+    <img src="stuff/mcclogo.png" alt="MCC Logo" style="width: 120px; cursor: pointer;">
+</a>
+
     <div class="container">
         <form id="bookingForm"> <!-- Added form element -->
             <div class="step" id="step1">
                 <h2>Step 1: Enter NIC</h2>
-                <input type="text" id="nic" placeholder="Enter your NIC">
+                <input type="text" id="nic" placeholder="Enter customer's NIC">
                 <button type="button" onclick="validateNIC()">Next</button>
                 <p id="nicMessage"></p>
             </div>
 
             <div class="step" id="step2" style="display: none;">
-                <h2>Step 2: Enter Passengers</h2>
+                <h2>Step 2: Enter Passengers & Select Vehicle Type</h2>
                 <input type="number" id="passengerCount" placeholder="Enter number of passengers" min="1">
                 <p id="vehicleSuggestion"></p>
                 <select id="vehicleType">

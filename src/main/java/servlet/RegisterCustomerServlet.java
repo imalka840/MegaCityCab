@@ -54,7 +54,7 @@ public class RegisterCustomerServlet extends HttpServlet {
                 stmt.setString(6, email);
 
                 stmt.executeUpdate();
-                response.sendRedirect("success.jsp");
+                response.sendRedirect("customers.jsp");
             }
 
         } catch (ClassNotFoundException | SQLException e) {
